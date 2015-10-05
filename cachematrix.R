@@ -3,11 +3,11 @@
 
 ## makeCacheMatrix creates creates a special "matrix" object that can cache its inverse.
 makeCacheMatrix <- function(x = matrix()) {
-  inv <- matrix()
+  inv <- NULL
 ## set the value of the Matrix
   set <- function(y){
     x <<- y
-    inv <<- matrix()
+    inv <<- NULL
   }
 ## get the value of the Matrix
   get <- function() x
